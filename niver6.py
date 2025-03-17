@@ -8,19 +8,75 @@ import win32com.client as win32
 from datetime import datetime
 
 # Caminho fixo do arquivo Excel a ser lido
-CAMINHO_EXCEL = r"C:\Users\fernando.vilasboas\Desktop\NIVER\resultado.xlsx"
+#caminho_excel = r"C:\Users\fernando.vilasboas\Desktop\NIVER\resultado.xlsx"
+
+caminho_excel = r"resultado.xlsx"
+
+def gerar_excel_de_iqy(caminho_arquivo_iqy, caminho_arquivo_excel):
+    try:
+        # Remove o arquivo Excel existente, se existir
+        if os.path.exists(caminho_arquivo_excel):
+            print(f"Removendo o arquivo existente: {caminho_arquivo_excel}")
+            os.remove(caminho_arquivo_excel)
+        
+        # Verifica se o arquivo IQY existe
+        if not os.path.exists(caminho_arquivo_iqy):
+            print(f"Erro: O arquivo {caminho_arquivo_iqy} não foi encontrado.")
+            return
+        
+        # Inicializa o Excel
+        excel = win32.gencache.EnsureDispatch("Excel.Application")
+        excel.Visible = False  # Define como False para rodar em segundo plano
+        
+        # Normaliza o caminho para evitar erros
+        caminho_arquivo_iqy = os.path.abspath(caminho_arquivo_iqy)
+        caminho_arquivo_excel = os.path.abspath(caminho_arquivo_excel)
+
+        # Abre o arquivo IQY no Excel
+        print(f"Abrindo arquivo IQY: {caminho_arquivo_iqy}")
+        workbook = excel.Workbooks.Open(caminho_arquivo_iqy)
+
+        # Atualiza os dados da consulta
+        print("Atualizando dados...")
+        workbook.RefreshAll()
+        excel.CalculateUntilAsyncQueriesDone()  # Aguarda consultas assíncronas serem finalizadas
+        
+        # Salva como um arquivo Excel
+        print(f"Salvando o arquivo Excel em: {caminho_arquivo_excel}")
+        workbook.SaveAs(caminho_arquivo_excel, FileFormat=51)  # FileFormat=51 é para arquivos .xlsx
+
+        # Fecha o Excel
+        workbook.Close(SaveChanges=False)
+        excel.Quit()
+        
+        print(f"Arquivo Excel gerado com sucesso: {caminho_arquivo_excel}")
+        ##
+        # 
+        lixo = input("O arquivo resultado.xlsx foi criado. Quando testar remover os e-mails ")
+        lixo = input ("Enter para prosseguir")
+
+
+    except Exception as e:
+        print(f"Erro ao gerar o arquivo Excel: {e}")
+
+
 
 # Função para carregar o arquivo Excel fixo
 def carregar_arquivo():
     global dados, lista_emails
 
+    caminho_iqy = r"consulta.iqy"
+    caminho_excel = r"resultado.xlsx"
+
+
+    gerar_excel_de_iqy(caminho_iqy, caminho_excel)
     try:
         # Verifica se o arquivo existe
-        if not os.path.exists(CAMINHO_EXCEL):
-            raise FileNotFoundError(f"O arquivo {CAMINHO_EXCEL} não foi encontrado.")
+        if not os.path.exists(caminho_excel):
+            raise FileNotFoundError(f"O arquivo {caminho_excel} não foi encontrado.")
 
         # Lê o arquivo Excel
-        dados = pd.read_excel(CAMINHO_EXCEL)
+        dados = pd.read_excel(caminho_excel)
 
         # Verifica se as colunas necessárias estão presentes
         colunas_necessarias = {'Nome', 'Data Nascimento', 'E-mail'}
@@ -51,19 +107,40 @@ def enviar_email(lista_aniversariantes, mes):
         mail = outlook.CreateItem(0)
         mes = mes.upper()
 
+        # Obtém o nome do remetente
+        nome_remetente = outlook.Session.CurrentUser.Name
+
         # Configurando e-mail
         assunto = f"Aniversariantes do mês {mes}"
-        corpo = f"Segue a lista de aniversariantes do mês {mes}:\n\nANIVERSÁRIO   ANIVERSARIANTE\n\n" + "\n".join(lista_aniversariantes)
+        corpo = f"Segue a lista de aniversariantes do mês {mes}:\n\nANIVERSÁRIO   ANIVERSARIANTE\n\n" + "\n".join(lista_aniversariantes) + f"\n\nAtenciosamente,\n\n{nome_remetente}"
 
         mail.Subject = assunto
         mail.Body = corpo
 
         # Adicionar todos os e-mails na lista de destinatários
-        destinatarios = ";".join(lista_emails)
-        mail.To = destinatarios
+        #destinatarios = ";".join(lista_emails)
+        destinatarios = "fernando.vilasboas@agu.gov.br"
+        
+        #mail.To = destinatarios
+        #usar linha abaixo no lugar do mail.To , quando quiser que NÃO APAREÇAM, no cabeçalho do e-mail, TODOS OS DESTINATÁRIOS
+        mail.BCC = destinatarios 
 
+        #o comando mail.Send() envia os e-mails . Vou só imprimir a lista de emails
         mail.Send()
+        #
+        print ("lista de destinatarios\n")
+        print(destinatarios)
+        #
+        #
+        #
+        
+
         messagebox.showinfo("Sucesso", "E-mail enviado com sucesso!")
+
+        if os.path.exists(caminho_excel):
+            print(f"Removendo o arquivo existente: {caminho_excel}")
+            os.remove(caminho_excel)
+
         print("O programa vai encerrar agora.")
         sys.exit()  # Encerra o programa
     except Exception as e:
@@ -101,9 +178,13 @@ def buscar_aniversariantes():
         f"     {row['Data Nascimento'].strftime('%d/%m')}  ........ {row['Nome']}"
         for _, row in aniversariantes_mes.iterrows()
     ]
-
+    
+    
+    #imprimindo lista de aniversariantes
+   
     # Exibe a lista e envia o e-mail
     enviar_email(lista_aniversariantes, mes)
+    
 
 # Interface gráfica com Tkinter
 root = tk.Tk()

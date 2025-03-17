@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a650b6a3-b5a6-45e8-9273-84a3a8f371e0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FELIZ OLD.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FELIZ.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FELIZ_reduzida.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista SHAREPOINT PRU6.url" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pink and Blue Illustrated Happy Birthday Card 3 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aniversario.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aniversario.spec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aniversario_imagem_e_lista.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aniversario_semboasvindas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gerar executável.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modelos de fonte.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/niver10.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/niver10.spec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/niver10new.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/niver10new.spec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/niver4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/niver5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/niver6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/niver7.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/niver8.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/niver9.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setupbkp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testeTCL.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teste_iqy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/niver.py" beforeDir="false" afterPath="$PROJECT_DIR$/niver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/query (3).iqy" beforeDir="false" afterPath="$PROJECT_DIR$/consulta.iqy" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2tzwhGhs8HwpmAQbwIatIRz5vUH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Python.aniversario.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aniversario2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.aniversario_sem_efeito.executor&quot;: &quot;Run&quot;,
+    &quot;Python.niver10.executor&quot;: &quot;Run&quot;,
+    &quot;Python.niver10new.executor&quot;: &quot;Run&quot;,
+    &quot;Python.teste_iqy.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/fernando.vilasboas/Desktop/NIVER&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\fernando.vilasboas\Desktop\NIVER" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-ce3d9afa04ac-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.20224.347" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a650b6a3-b5a6-45e8-9273-84a3a8f371e0" name="Changes" comment="" />
+      <created>1741368331972</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741368331972</updated>
+    </task>
+    <servers />
+  </component>
+</project>

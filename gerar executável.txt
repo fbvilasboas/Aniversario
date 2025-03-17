@@ -1,0 +1,11 @@
+# Para GERAR EXECUTÁVEL
+#deve ser criado com no prompt do Anaconda um ambiente virtual (exemplo: criar ambiente com o nome py309 e usar o python versão 3.09 )
+#         conda create --name py309 python=3.09
+#
+#entrar no ambiente virtual py309:
+#         conda activate py309
+#instalar todas as bibliotecas usadas no programa neste ambiente:
+#         pip install bibliotecas
+#
+# Então, digitar na linha de comando:
+#pyinstaller --onefile -w --add-data "imagem_nova.png;." --hidden-import=tkcalendar --hidden-import=babel.numbers FORMULARIOPCDP5.PY
