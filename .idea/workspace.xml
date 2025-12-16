@@ -4,38 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a650b6a3-b5a6-45e8-9273-84a3a8f371e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/NIVER.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aniversario_v15.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aniversario_v16.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qual_venv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testecor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FELIZ OLD.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FELIZ.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FELIZ_reduzida.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aniversario.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aniversario.spec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aniversario_imagem_e_lista.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aniversario_semboasvindas.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/niver.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/niver10.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/niver10.spec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/niver10new.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/niver2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/niver3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/niver4.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/niver5.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/niver6.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/niver7.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/niver8.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/niver9.py" beforeDir="false" />
-    </list>
+    <list default="true" id="a650b6a3-b5a6-45e8-9273-84a3a8f371e0" name="Changes" comment="Finalizado programa com escolha de destinatário ou todos e imagem a ser enviada no início da lista" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -149,6 +118,27 @@
       <option name="presentableId" value="Default" />
       <updated>1741368331972</updated>
     </task>
+    <task id="LOCAL-00001" summary="Finalizado programa com escolha de destinatário ou todos e imagem a ser enviada no início da lista">
+      <option name="closed" value="true" />
+      <created>1765827421870</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1765827421870</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Finalizado programa com escolha de destinatário ou todos e imagem a ser enviada no início da lista">
+      <option name="closed" value="true" />
+      <created>1765828724937</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1765828724937</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finalizado programa com escolha de destinatário ou todos e imagem a ser enviada no início da lista" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalizado programa com escolha de destinatário ou todos e imagem a ser enviada no início da lista" />
   </component>
 </project>
